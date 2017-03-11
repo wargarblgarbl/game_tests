@@ -64,8 +64,14 @@ func main () {
 	//init population
 	fmt.Println("initializing population"	)
 	populous()
+	fmt.Println(entities[1])
 	for _, i := range entities {
+			entities = append(entities, entities[2])
+
 		fmt.Println(i.Name)
+	}
+	for _, i := range entities {
+		fmt.Println(i)
 	}
 	
 }
